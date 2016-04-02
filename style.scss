@@ -1,0 +1,277 @@
+@import 'setup';
+
+// DESIGN ELEMENTS
+
+// FONTSTYES
+$nameLogo: 'Caveat', cursive;
+$titleFont: 'PT Sans Caption', sans-serif;
+$bodyFont: 'Raleway', sans-serif;
+
+
+// COLORS
+$whiteGrey: #F3F3F3;
+$lightGrey: #B3BDBB;
+$white: #FFFFFF;
+$darkGrey: #1D1D1F;
+$orange: #E49D02;
+
+
+// COMMON STYLES
+
+@mixin fontSize($scale){
+	font-size: $scale * 1px;
+	font-size: ($scale /10) * 1rem;
+}
+
+body{
+	font-family: $bodyFont;
+	@include fontSize(12);
+}
+
+html{
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, p{
+	margin: 0;
+	padding: 0;
+}
+
+//Navigation
+
+nav{
+	background: $white;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10%;
+	margin-bottom: 3%;
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+}
+
+.logo{
+	font-family: $nameLogo;
+	font-size: 30px;
+	color: $orange;
+	padding-right: 60px;
+	padding-left: 50px;
+}
+
+.nav{
+	padding-top: 2%;
+	font-size: 16px;
+	padding-left: 150px;
+}
+
+nav li a{
+	text-decoration: none;
+	color: $darkGrey;
+}
+
+nav li a:hover{
+	text-decoration: underline;
+}
+
+ul, li{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+//About Me Hero Section
+
+header{
+	padding-top: 30%;
+	padding-bottom: 20%;
+	background: url(assets/images/typewriter.jpeg) no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+
+
+}
+
+.wrapper{
+	width: 65%;
+	margin: 0 auto;
+}
+
+.wrapper h1{
+	font-family: $titleFont;
+	font-size: 5rem;
+	text-transform: uppercase;
+	padding-bottom: 3%;
+	color: $whiteGrey;
+}
+
+.wrapper h2{
+	color: $white;
+	font-size: 2.4rem;
+}
+
+//About Me Content Section
+
+.wrapper2{
+	width:75%;
+	margin: 0 auto;
+}
+
+.wrapper2 h1{
+	text-align: center;
+}
+
+.aboutMe{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin: 0 auto;
+}
+.aboutCopyList{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 2%;
+}
+
+.aboutCopyList li{
+	padding-left: 16%;
+	padding-bottom: 3%;
+}
+
+.aboutCopyIcons li{
+	padding-left: 20%;
+	padding-top: 3%;
+	color: $orange;
+}
+
+.aboutCopy p{
+	font-size: 14px;
+	line-height:25px;
+	padding-bottom: 2%;
+}
+
+button{
+	margin-left: 40%;
+	margin-top: 2%;
+	background: $orange;
+	color: $white;
+	font-size: 14px;
+}
+
+//Work Section
+
+.workSection{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background: $whiteGrey;
+}
+
+.workSection h1{
+	padding-bottom: 3%;
+}
+
+.wrapper3{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wrapper3 h1{
+	text-align: center;
+
+}
+
+.workSection li{
+	width: 33.3%;
+	padding-bottom: 2%;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+//Profile
+
+.wrapper4{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wrapper4 h1{
+	text-align: center;
+}
+
+.profile{
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+
+.profile h1{
+	padding-bottom: 3%;
+}	
+
+.wrapper5{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.wrapper5 ul{
+	padding-left: 30%;
+}
+
+.profile h3{
+	line-height: 25px;
+	font-size: 14px;
+	padding-top: 2%;
+}
+
+.profile h2{
+	padding-top: 3%;
+	padding-bottom: 2%;
+	color: $orange;
+}
+
+.profile h4{
+	padding-bottom: 1%;
+}
+
+.wrapper4 li{
+	width: 25%;
+}
+
+// .employmentHistory{
+// 	float: left;
+// 	padding-right: 5%;
+// }
+
+// .skills{
+// 	float: left;
+// }
+
+
+
+//Footer
+
+footer{
+	background: $whiteGrey;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+footer h3{
+	font-size: 16px;
+	margin: 0 auto;
+	padding-left: 20%;
+	padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
